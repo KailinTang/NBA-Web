@@ -1,7 +1,11 @@
 @import 'styles/App.css';
+@import 'styles/Main.css';
 @import 'styles/TopNavBar.css';
+@import 'styles/ShotChart.css';
+@import 'styles/Profile.css';
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
