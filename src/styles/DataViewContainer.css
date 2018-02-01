@@ -1,4 +1,4 @@
-a.data-view {
+.data-view {
     overflow: hidden;
 }
 
@@ -6,3 +6,9 @@ a.data-view {
     width: 550px;
     margin: auto;
 }
+
+.chart-type-radio {
+    margin-top: 20px;
+    padding-left: 7px;
+}
+
