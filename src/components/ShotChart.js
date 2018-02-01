@@ -12,7 +12,7 @@ export class ShotChart extends React.Component {
         playerId: PropTypes.number.isRequired,
     }
 
-    componentDidMount() {
+    componentDidUpdate() {
         nba.stats.shots({
             PlayerID: this.props.playerId
         }).then((response) => {
@@ -25,6 +25,7 @@ export class ShotChart extends React.Component {
             }));
 
             const courtSelection = d3.select("#shot-chart");
+            courtSelection.html('');
             const chart_court = court().width(500);
             const chart_shots = shots().shotRenderThreshold(2).displayToolTips(true).displayType("hexbin");
             courtSelection.call(chart_court);
